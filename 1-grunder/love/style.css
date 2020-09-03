@@ -1,26 +1,32 @@
 body {
-background-color: lightyellow;
+background-color: beige;
 }
 
 h1{
   font-family: 'Contrail One', cursive;
   font-size: 80px;
-  color: lightblue;
+  color: lightskyblue;
 }
 
 h2{
   font-family: 'Contrail One', cursive;
+  font-size: 40px;
+  color:lightskyblue;
 }
 
 p{
-
+  font-family: 'Sail', cursive;
+  font-size: 30px;
+  color:grey;
 
 
 
 }
-font-family: 'Sail', cursive;
+font-family:'Sail', cursive;
 a{
 
+  font-family: 'Contrail One', cursive;
+  color: deeppink;
 
 
 }
