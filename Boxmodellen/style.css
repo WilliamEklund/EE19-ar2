@@ -1,0 +1,38 @@
+body{
+background: url(./Bilder/ishan-seefromthesky-LNdpi8Yzi34-unsplash\ \(1\).jpg);
+color: black;
+margin-left: 300px;
+margin-top: -60px;
+
+}
+
+h1{
+  font-family: 'Share', cursive;
+font-size: 90px;
+
+
+
+}
+
+h2{
+  font-family: 'Share', cursive;
+font-size: 55px;
+
+}
+
+p{
+  font-family: 'Share', cursive;
+font-size: 35px;
+text-transform:uppercase;
+
+}
+
+a{
+color:black;
+border:20px;
+border-radius: 15px;
+background:lightskyblue;
+padding: 5px;
+margin: 100px;
+
+}
