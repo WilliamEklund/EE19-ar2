@@ -1,0 +1,63 @@
+
+
+
+
+table{
+border-collapse: collapse;
+width: 80%;
+margin-left: -15%;
+margin-top:100px;
+border-radius: 1px ;
+border: 4px yellow solid;
+
+
+
+
+}
+
+body{
+background: url(https://www.allsvenskan.se/_/asset/no.seeds.app.sef:1558607105/img/flow.png);
+background-position: center;
+background-color: black;
+background-image:100% ;
+margin-left: 600px;
+
+
+}
+
+caption{
+background-color: navy;
+padding: 30px;
+font-family:'News Cycle', sans-serif;
+color: white;
+border: 4px yellow solid;
+font-size: 40px;
+}
+
+tr{
+
+}
+td{
+  background-color: white;
+  border-bottom: 1px solid;
+  padding: 20px;
+  font-size: 17px;
+  font-family:sans-serif;
+}
+
+th{
+background-color: lightskyblue;
+padding: 15px;
+font-size: 21px;
+border: 1px;
+font-family:"Liberation Mono","Courier New",monospace;
+border-radius:1px;
+text-align: start;
+}
+img{
+  width: 100px;
+  height: 20px;
+
+}
+  
+
