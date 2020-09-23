@@ -22,7 +22,8 @@ background: #fff;
 margin: 60px auto;
 padding:30px;
 border-radius:20px;
-box-shadow: 15px 15px 20px;
+box-shadow: 15px 15px 20px black;
+background: lightyellow;
 
 }
 
