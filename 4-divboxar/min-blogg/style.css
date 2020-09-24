@@ -1,0 +1,52 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #68b0ab;
+}
+div.kontainer {
+    width: 900px;
+    background: indigo;
+    margin: auto;
+    padding: 40px;
+    font-family: 'Ultra', serif;
+    box-shadow: 0px 0px 20px #ffffff;
+}
+h1 {
+    font-size: 70px;
+    margin-bottom: 15px;
+    color: lightgrey;
+}
+/*Inläggens Utseende*/
+div.inlägg {
+    background: slateblue;
+    font-family: 'Concert One', cursive;
+    margin: auto;
+    padding: 50px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #ffffff;
+
+}
+img {
+    width: 100%;
+    background-size: auto;
+}
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: deeppink;
+}
+p {
+    font-size: 20px;
+    color: lightgrey;
+}
