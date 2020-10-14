@@ -1,0 +1,51 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(./bilder/bg.jpg);
+}
+form {
+    display: table;
+}
+div.kontainer {
+    font-family: 'Courier Prime', monospace;
+    width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(241, 241, 238, 0.397);
+}
+div.info {
+    color: black;
+    font-style: monospace;
+    display: table-row;
+    text-align: center 20px;
+}
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px 2px;
+}
+label {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 30px;
+}
+button {
+    color: coral;
+    margin-left: 35px;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 15px;
+}
+textarea {
+    display: flex;
+}
