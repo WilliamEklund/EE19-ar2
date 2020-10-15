@@ -1,0 +1,74 @@
+/* Enkel CSS-reset */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+/* Siduhuvudet utseende */
+.kontainer{
+  font-family: 'Petit Formal Script', cursive;
+}
+.siduhuvud{
+
+}
+.siduhuvud img{
+
+}
+.siduhuvud ul{
+
+}
+.siduhuvud li {
+
+}
+.siduhuvud li a{
+  font-family: 'Petit Formal Script', cursive;
+}
+.siduhuvud li a:hover{
+
+}
+
+/* Rutornas utseende */
+/* Ljus #FEF1E5 */
+/* Mörk #EFDAC5 */
+.rutor{
+display: grid;
+grid-template-columns: 25% 25% 25% 25%;
+
+}
+.ljus{
+  background:#FEF1E5 ;
+}
+.mörk{
+  background:#EFDAC5;
+}
+.rutor .burgare{
+
+}
+.rutor .burgare h1{
+  font-family: 'Petit Formal Script', cursive;
+}
+.rutor .burgare h2{
+  font-family: 'Petit Formal Script', cursive;
+
+}
+.rutor .burgare img{
+  width: auto;
+
+}
+.rutor .burgare img:hover{
+
+}
+.rutor .burgare p{
+  
+  font-size: 30px;
+}
+  
+
+
+
+
