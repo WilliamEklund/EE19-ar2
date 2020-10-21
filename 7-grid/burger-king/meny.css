@@ -1,74 +1,97 @@
 /* Enkel CSS-reset */
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 body, h1, h2, h3, h4, h5, h6, p, ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 /* Siduhuvudet utseende */
-.kontainer{
-  font-family: 'Petit Formal Script', cursive;
+.kontainer {
+    font-family: 'Bebas Neue', cursive;
 }
-.siduhuvud{
-
+.siduhuvud {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
 }
-.siduhuvud img{
-
+.siduhuvud img {
+    margin-left: 150px;
+    position: inherit;
 }
-.siduhuvud ul{
-
+.siduhuvud ul {
+    list-style-type: none;
 }
-.siduhuvud li {
-
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 15px;
+    position: relative;
+    top: 35px;
+    right: 200px;
 }
-.siduhuvud li a{
-  font-family: 'Petit Formal Script', cursive;
+.siduhuvud ul li a {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 22px;
+    color: #682F1C;
+    text-decoration: none;
 }
-.siduhuvud li a:hover{
-
+ul li a.active {
+    color: #F7A600;
+}
+.siduhuvud li {}
+.siduhuvud li a {}
+.siduhuvud li a:hover {
+    color: #F7A600;
+}
+ul li a.active:hover {
+    color: #857775;
 }
 
 /* Rutornas utseende */
 /* Ljus #FEF1E5 */
 /* Mörk #EFDAC5 */
-.rutor{
-display: grid;
-grid-template-columns: 25% 25% 25% 25%;
-
+.rutor {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
-.ljus{
-  background:#FEF1E5 ;
+.ljus {
+    background: #FEF1E5;
 }
-.mörk{
-  background:#EFDAC5;
+.mörk {
+    background: #EFDAC5;
 }
-.rutor .burgare{
-
+.rutor .burgare {
 }
-.rutor .burgare h1{
-  font-family: 'Petit Formal Script', cursive;
+.rutor .burgare h1 {
+    font-size: 55px;
+    color: #682F1C;
+    text-align: center;
+    margin-top: 150px;
 }
-.rutor .burgare h2{
-  font-family: 'Petit Formal Script', cursive;
-
+.rutor .burgare h2 {
+    font-family: 'Atma', cursive;
+    font-size: 40px;
+    font-weight: lighter;
+    color: #682F1C;
+    text-align: center;
 }
-.rutor .burgare img{
-  width: auto;
-
+.rutor .burgare img {
+    width: 80%;
+    margin-left: 45px;
+    transition: all 0.2s;
 }
-.rutor .burgare img:hover{
-
+.rutor .burgare img:hover {
+    transform: scale(1.1);
 }
-.rutor .burgare p{
-  
-  font-size: 30px;
+.rutor .burgare p {
+    color: #682F1C;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
 }
-  
-
-
-
-
