@@ -1,0 +1,70 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: whitesmoke;
+    background: url(./bilder/background_image.jpg);
+
+}
+table {
+    border-collapse: collapse;
+    margin-top: 70px;
+    border-radius: 5px;
+    padding: 50px;
+    margin: auto;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 2px 3px #aa0101ab;
+    
+}
+tr {}
+th {
+    padding: 30px;
+    border-bottom: 1px solid #000000;
+    font-size: 17px;
+    font-family: "Liberation Mono", "Courier New", monospace;
+    text-align: start;
+    background-color: rgb(209, 237, 247);
+    text-align: center;
+
+}
+caption {
+    font-style: monospace;
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+    padding: 30px;
+    background-color: rgb(79, 138, 255);
+    border: 3px #000000 solid;
+    border-bottom: thin;
+
+    box-shadow: 2px 2px 2px 3px #aa0101ab;
+}
+td {
+    border-bottom: 0.5px solid;
+    padding: 10px;
+    font-size: 17px;
+    font-family: sans-serif;
+    text-align: start;
+    margin-inline-start: auto;
+}
+
+td img {
+    width: 30px;
+    box-sizing: border-box;
+    height: 35px;
+    text-align: center;
+}
+.first {
+    background-color: rgb(255, 255, 255);
+}
+.second {
+    background-color: rgb(247, 238, 238);
+}

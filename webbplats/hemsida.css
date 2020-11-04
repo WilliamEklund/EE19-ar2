@@ -1,0 +1,73 @@
+/* Enkel CSS-reset */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+        background: url(./bilder/Halloween-Aesthetic-Background-Wallpaper-HD.jpg);
+
+    }
+.kontainer{
+
+}
+.siduhuvud{
+margin: auto;
+width: 1920px;
+}
+.siduhuvud ul{
+    padding: 35px;
+    background-color: rgba(197, 197, 197, 0.534);
+   text-align: center;
+   
+} 
+.siduhuvud ul h1{
+
+}
+.siduhuvud li{
+    font-size: 23px;
+}
+.siduhuvud a{
+
+}
+.siduhuvud ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 15px;
+    position: relative;
+    left: 800px;
+}
+.siduhuvud ul li a{
+
+}
+.spallt{
+margin: auto;
+width: auto;
+margin-left: 850px;
+margin-top: 50px;
+border: 6px;
+border-radius: 3px;
+padding: 30px;
+
+background-color: crimson;
+
+}
+.spallt h2{
+
+}
+.spallt img{
+
+}
+.spallt p{
+
+}
+.spallt h2 p{
+
+}
