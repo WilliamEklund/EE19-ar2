@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>uppgift 6</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kontainer">
+    <h1>Uppgift 6</h1>
+  <button onclick="ePost()">Skriv din epost här!</button>
+</div>
+  <script>
+    // funktionen//
+function ePost() {
+  var text = prompt ("Skriv in din epostadress");
+  alert (text.replace('@', 'at'));
+}
+  </script>
+</body>
+</html>
