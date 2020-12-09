@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uppgift-4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kontainer">
+<h1>Mixtra med webbsidan</h1>
+<button onclick="bild1()">Bild 1</button>
+<button onclick="bild2()">Bild 2</button>
+<button onclick="bild3()">Bild 3</button>
+
+  </div>
+  <script>
+function bild1(){
+  document.body.innerHTML ="<img src=\"./bilder/förstabild1.jpg\" alt=\"förstabilden\">";
+}
+function bild2(){
+  document.body.innerHTML ="<img src=\"./bilder/andrabild2.jpg\" alt=\"andrabilden\">";
+}
+function bild3(){
+  document.body.innerHTML ="<img src=\"./bilder/tredjebild3.jpg\" alt=\"tredjebilden\">";
+}
+  </script>
+</body>
+</html>

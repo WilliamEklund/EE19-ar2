@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uppgift-2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kontainer">
+<h1>Mixtra med webbsidan</h1>
+<button onclick="mörk()">Mörk</button>
+<button onclick="ljus()">Ljus</button>
+
+  </div>
+  <script>
+function mörk(){
+  document.body.style.cssText = "background: #000000;"
+
+}
+function ljus(){
+  // Ändra på titel
+  document.body.style.cssText = "background: #ffffff;"
+}
+  </script>
+</body>
+</html>

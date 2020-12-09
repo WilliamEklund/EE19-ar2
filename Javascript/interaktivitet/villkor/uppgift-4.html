@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+
+  <script>
+/* Skapa ett skript som frågar användaren vad hen heter.
+Om användaren heter Tova ska skriptet säga att användaren har namnsdag idag.
+Om användaren istället heter Abbe ska skriptet svara "Du har namnsdag imorgon", men om användaren varken heter Tova eller Abbe ska skriptet svara "Du har varken namnsdag vare sig idag eller imorgon". */
+
+//Skapa ett skript som frågar användaren vad hen heter
+var namn = prompt ("Vad heter du?");
+
+//Om användaren heter Tova ska skriptet säga att användaren har namnsdag idag
+if ( namn == "Tova") {
+  alert ("Grattis du har namnsdag idag");
+
+  //Om användaren istället heter Abbe ska skriptet svara "Du har namnsdag imorgon"
+}
+else if (namn == "Abbe") {
+  alert ("Du har namnsdag imorgon");
+}
+//men om användaren varken heter Tova eller Abbe ska skriptet svara "Du har varken namnsdag vare sig idag eller imorgon"
+else{
+  alert("Du har varken namnsdag idag eller imorgon");
+}
+  </script>
+</body>
+</html>
