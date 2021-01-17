@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spelet (Projekt 1)</title>
+  <link rel="stylesheet" href="spelet.css">
+</head>
+<body>
+  <div class="kontainer">
+    <h1>Interaktiv Berättelse</h1>
+  </div>
+
+  <script>
+    var fråga1 = prompt("Du står framför en labyrint, Vill du gå in? (ja/nej)");
+     var fel = "Ladda om sidan för att börja om!";
+
+    if (fråga1 == "ja") {
+      fråga1 = prompt("Grattis! du är nu på nivå 1.");
+      
+      document.body.style.cssText = "background: white"
+    }
+    else{
+    alert (fel);
+    }
+    
+    
+    var nivå1 = prompt("Du är nu inne i labyrinten, Antingen tar du ingången till  vänster eller höger. Vilken ingång väljer du?(v/h)");
+    
+    if (nivå1 == "v") {
+      nivå1 = prompt("Grattis du valde rätt! klicka OK för att fortsätta" );
+    }
+
+    else {
+      alert ("Du valde fel väg." + fel);
+      document.body.innerHTML ="<h1> GAME OVER</h1>"
+      document.body.style.cssText = "background: green"
+    }
+ 
+    var nivå2 = prompt ("Du har nu valet att antingen gå tillbaka den väg du kom ifrån eller ta en RISK och gå ner i en mörk mystisk tunnel. Vad väljer du? (tillbaka/risk)")
+
+    if (nivå2.toLocaleLowerCase() == "risk") {
+      nivå2 = prompt("Du är i den mörka tunneln och kan inte gå tillbaka eftersom det inte finns någon stege upp. Du har inget annat val än att följa tunnelns mörka stig. kilcka OK för att fortsätta!"); 
+      document.body.style.cssText = "background: black"
+    }
+
+    else{
+      nivå2 = prompt ("Du valde fel och hittade inte tillbaka." + fel);
+      document.body.innerHTML ="<h1> GAME OVER</h1>"
+   
+    }
+    
+
+var nivå3 = prompt ("Efter ett tag ser du 3 vägar att följa i tunneln, vänster, höger eller rakt fram. Vilken väg väljer du? Alternativ: (1/2/3)");
+     
+  
+  
+    if (nivå3 == "3") {
+      alert ("Du valde rätt väg och kan forsätta följa stigen");
+      document.body.innerHTML ="<h1> DU VANN SPELET!!!</h1>"
+      document.body.style.cssText = "background: pink"
+    }
+    else {
+      nivå3 = prompt (fel);
+      
+    }
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+   /* var svar = prompt("Du står framför en labyrint, Du ser 2 ingångar, Vill du gå in? (j/n)");
+
+    if (svar == "n") {
+      svar = prompt("Du valde att inte gå in i labyrinten. Ladda om sidan för att spela!");
+    }
+    if (svar == "j") {
+
+      svar = prompt("Du har två alternativ, Antiingen tar du ingången till  vänster eller höger. Vilken ingång väljer du?(v/h)");
+    
+
+    if (svar == "v") {
+      svar = prompt("Du har kommit till en återvändsgränd. Du har nu valet att natingen gå tillbaka den väg du kom ifrån eller att chansa och gå ner i en mörk mystisk tunnel. Vad väljer du? (gå tillbaka/tunnel)");
+    }
+    if (svar == "h") {
+      svar = prompt("Du har kommit till en återvändsgränd. Du har nu valet att natingen gå tillbaka den väg du kom ifrån eller att chansa och gå ner i en mörk mystisk tunnel. Vad väljer du? (gå tillbaka/tunnel)");
+    }
+    if (svar == "gå tillbaka") {
+      svar = prompt ("Du gick tillbaka men blev förrvirad och glömde bort vart du kom ifrån. Starta om sidan för att försöka igen!");
+    }
+
+    if (svar == tunnel) {
+      svar = prompt("Du dog");
+    }
+  } 
+
+  Du har kommit till en återvändsgränd. Du har nu valet att natingen gå tillbaka den väg du kom ifrån eller ta en RISK och gå ner i en mörk mystisk tunnel. Vad väljer du? (tillbaka/risk)

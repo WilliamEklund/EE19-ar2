@@ -3,36 +3,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>exempel 4</title>
+  <title>exempel 5</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="kontianer">
   <h1>Problemlösning</h1>
   <script>
-    //Fungerar fanskapet?
-    var svar1 =prompt ("Fungerar fanskapet?(j/n)");
-    if (svar1== "j"){
+  
+   //Fungerar fanskapet?
+   var svar1 = prompt ("Fungerar fanskapet?(ja/nej)");
+
+if (svar1 == "ja"){
 
 // Håll fingrarna borta
-    alert ("Håll fingrarna borta");
+svar1 = prompt ("Håll fingrarna borta");
+
+
+} else {
   // Problemet löst!
-
-  } else {
-
+ alert ("Problemet löst!");
+}
 //Har du micklat med den?
-var svar2 = prompt ("Har du micklat med den?");
-if (svar2 == "j") { 
+var svar1 = prompt ("Har du micklat med den?(ja/nej)");
+if (svar1 == "ja") { 
 
-  // Jälva spånhuvud!
-  alert ("Jälva spånhuvud!");
+// Jälva spånhuvud!
+alert ("Jälva spånhuvud!");
+}
+else{
+  alert ("Problemet löst!");
 }
 // Vet någon om de?
-var svar3 = prompt ("Vet någon om de?");
-if (svar3 == "j") {
+var svar2 = prompt ("Vet någon om de? (ja/nej)");
+if (svar2 == "ja") {
 
-  //Starkarcs jävel!
-  alert ("Stackars jävel!");
+//Starkarcs jävel!
+alert ("Stackars jävel!");
+}
+else{
+  alert("Bra jobbat!");
+}
+
+
+
+
 
 // Kan du skylla på någon
 var svar4 = prompt ("Kan du skylla på någon? (j/n)");
