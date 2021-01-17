@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gissa ett tal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kontainer">
+    <h1>Spam check</h1>
+    <button onclick="spamCheck()"> Är du en människa?</button>
+  </div>
+  <script>
+    function spamCheck() {
+
+      var slump1 = Math.floor(Math.random() * 9 + 1);
+      var slump2 = Math.floor(Math.random() * 9 + 1);
+
+      var summa = slump1 + slump2;
+
+      var gissa = prompt("Vad är " + slump1 + "+" + slump2 + "?");
+      if (summa == gissa) {
+        alert("Du är inte en robot")
+      }
+      else {
+        alert("Du är en robot")
+      }
+    }
+  </script>
+</body>
+</html>
