@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>loopa4</title>
+    <script src="https://kit.fontawesome.com/e7c2c526f3.js" crossorigin=anonymous></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Gissa ett tal</h1>
+        <button onclick="loop()">Är du redo?</button>
+    </div>
+    <script>
+        function loop() {
+            // slumptal 1 - 50
+            var slumptal = Math.ceil(Math.random() * 50);
+            console.log("slumptal", slumptal);
+
+            // antal varv
+            var varv = 0;
+
+            // loopa 5 varv
+            while (varv < 5) {
+                // användaren gissar
+                var gissning = prompt("Gissa ett tal!")
+
+                // testa om rätt svar
+                if (gissning == slumptal) {
+                    alert("Du är begåvad")
+                    break;
+
+                } else {
+                    alert("Fel! försök igen");
+                }
+                // räkna upp varv
+                varv++; // lägg till 1
+                console.log("varv", varv);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>Exempel-1 queryselector</title>
+    <script
+      src="https://kit.fontawesome.com/e7c2c526f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="kontainer">
+      <h2>Input</h2>
+      <label>Ange förnamn <input class="fnamn" type="text" /></label>
+      <label>Ange efternamn <input class="enamn" type="text" /></label>
+      <label>Ange smeknamn <input class="snamn" type="text" /></label>
+      <button onclick="läsa()">Skicka!</button>
+    </div>
+
+    <script>
+      function läsa() {
+        // hitta input
+        const inputFnamn = document.querySelector(".fnamn");
+        const inputEnamn = document.querySelector(".enamn");
+        const inputSnamn = document.querySelector(".snamn");
+        // läs av input
+        var fnamn = inputFnamn.value;
+        var enamn = inputEnamn.value;
+        var snamn = inputSnamn.value;
+        console.log(fnamn, enamn, snamn);
+        alert("Hej! " + fnamn + " " + enamn + " " + snamn + " Välkommen!");
+      }
+    </script>
+  </body>
+</html>

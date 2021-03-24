@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter-uppgift</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Counter</h1>
+            <span id="value">0</span>
+            <div class="button-container">
+                <button class="btn decrease">decrease</button>
+                <button class="btn reset">reset</button>
+                <button class="btn increase">increase</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        // räknaren har ett värde på noll
+        let count = 0;
+        // välj ut element med queryselector
+        const value = document.querySelector("#value");
+        const btns = document.querySelectorAll(".btn");
+        // kör funktionen en gång för varje valda element
+        btns.forEach(function(btn) {
+            // skapa en funktion som gör att man kan öka, minska och återställa värdet med knapparna
+            btn.addEventListener("click", function(e) {
+                const styles = e.currentTarget.classList;
+                // minska
+                if (styles.contains("decrease")) {
+                    count--;
+                    // öka
+                } else if (styles.contains("increase")) {
+                    count++;
+                    // återställ
+                } else {
+                    count = 0;
+                }
+                // färg när man ökar
+                if (count > 0) {
+                    value.style.color = "green";
+                }
+                // färg när man minskar
+                if (count < 0) {
+                    value.style.color = "red";
+                }
+                // färg när man återställer
+                if (count === 0) {
+                    value.style.color = "#222";
+                }
+                // värdets innehåll är lika med räknarens värde. Gör så att värdet syns i spannen.
+                value.textContent = count;
+            });
+        });
+    </script>
+</body>
+</html>

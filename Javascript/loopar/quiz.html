@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Quiz</title>
+    <script src="https://kit.fontawesome.com/e7c2c526f3.js" crossorigin=anonymous></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Quiz dags!</h1>
+        <button onclick="quiz()">Börja frågeställningen!</button>
+    </div>
+
+    <script>
+        function quiz() {
+            //slumpa en fråga
+            var slumptal = Math.ceil(Math.random() * 5);
+            var poäng = 0;
+
+            if (slumptal == 1) {
+                var svar = prompt("Vad är 1 + 1?\n (1=2, 2=10, 3=3n");
+                if (svar == "1" || "2") {
+                    poäng++;
+                } else {
+                    poäng--;
+                }
+
+            if (slumptal == 2) {
+                var svar = prompt("Vad heter Sveriges huvudstad?\n (1=Göteborg, 2=Stockholm, 3=Örebro");
+                if (svar == "2" || "Stockholm") {
+                    poäng++;
+                } else {
+                    poäng--;
+                }
+            }
+            
+
+            if (slumptal == 3) {
+                var svar = prompt("Vart i Sverige ligger Kiruna?\n (1=Väst om Sverige, 2=Norr om Sverige, 3=Öst om Sverige");
+                if (svar == "2" || "Norr om Sverige") {
+                    poäng++;
+                } else {
+                    poäng--;
+                }
+            }
+            if (slumptal == 4) {
+                var svar = prompt("I vilket landskap ligger Skåne?\n (1=Väst om Sverige, 2=Norr om Sverige, 3=Halland");
+                if (svar == "3" || "Halland") {
+                    poäng++;
+                } else {
+                    poäng--;
+                }
+            }
+            if (slumptal == 5) {
+                var svar = prompt("Vad är det för färger på Sveriges flagga?\n (1=Blått och gult, 2=Rött och grönt, 3=Gul och orange");
+                if (svar == "1" || "Blått och gult") {
+                    poäng++;
+                } else {
+                    poäng--;
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>

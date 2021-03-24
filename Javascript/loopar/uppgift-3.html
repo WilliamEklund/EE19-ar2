@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>uppgift 3</title>
+    <script src="https://kit.fontawesome.com/e7c2c526f3.js" crossorigin=anonymous></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 3</h1>
+        <button onclick="fråga()">Vad heter den första hemdatorn?</button>
+    </div>
+
+    <script>
+        function fråga() {
+            // korrekt lösenord
+            var korrektSvar = "Kenbak-1";
+            //     antal försök användaren har
+            var antalFörsök = "0";
+
+            // oändlig loop
+            while (antalFörsök < 5) {
+                var frågaAnvändare = prompt("Vad heter den första hemdatorn?");
+
+                // testa om rätt lösenord
+                if (frågaAnvändare == korrektSvar) {
+                    alert("Rätt svar!");
+                    break;
+
+                } else {
+                    alert("Fel svar, försök igen!");
+                }
+                antalFörsök++; // lägg till 1
+                console.log("antalFörsök", antalFörsök);
+            }
+        }
+    </script>
+</body>
+</html>

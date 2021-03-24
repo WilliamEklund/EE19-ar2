@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Labb 4</title>
+    <script src="https://kit.fontawesome.com/e7c2c526f3.js" crossorigin=anonymous></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Variabler och funktioner</h1>
+        <label>Användarnamn <input type="text" class="anamn"></label>
+        <label>Lösenord <input type="password" class="lösen"></label>
+        <button class="btn btn-warning">Kontrollera lösenordet</button>
+        <button class="btn btn-info">Demo</button>
+        <button class="btn btn-primary">Logga in</button>
+        <button class="btn btn-danger">Töm rutorna</button>
+        <label>Svar <textarea></textarea></label>
+    </div>
+    <script>
+        // Koden som körs först
+        // Element som vi behöver komma åt
+        const rutaAnamn = document.querySelector(".anamn");
+        const rutaLösen = document.querySelector(".lösen");
+        const knappKontroll = document.querySelector(".btn-warning");
+        const knappDemo = document.querySelector(".btn-info");
+        const knappLoggaIn = document.querySelector(".btn-primary");
+        const knappTöm = document.querySelector(".btn-danger");
+        const rutaSvar = document.querySelector("textarea");
+
+        knappLoggaIn.addEventListener("click", function() {
+                    // Läs av användarnamnet och lagra i en lokal variabel
+                    var anamn = rutaAnamn.value;
+                    // Läs av lösenordet och lagra i en lokal variabel
+                    var lösen = rutaLösen.value;
+                    // Skriv ut användarnamnet i loggen Skriv ut lösenordet i loggen
+                    console.log(anamn + " " + lösen);
+                    // Skriv "Välkommen ... du är inloggad" i rutaSvar
+                    if (anamn + lösen) {
+                        rutaSvar.value = "Välkommen du är inloggad";
+                    }
+                })
+                    // Kod som körs när användaren klickar på knappen Töm
+                    knappTöm.addEventListener("click", function() {
+                        // Töm alla rutor genom att skriva tomt "" i rutorna
+                        var tömKnapp = knappTöm;
+
+                        if (tömKnapp) {
+                            rutaAnamn.value = "";
+                            rutaLösen.value = "";
+                            rutaSvar.value = "";
+                        }
+                    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>Uppgift-1 querySelector</title>
+    <script
+      src="https://kit.fontawesome.com/e7c2c526f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="kontainer">
+      <h1>Är du en människa?</h1>
+      <h3>Input</h3>
+      <label>Vad är 50 + 50? <input class="fråga" type="text" /></label>
+
+      <button onclick="skicka()">Kontrollera svar</button>
+
+      <h3>Output</h3>
+      <label>Hemligt mobilnummer</label><input class="svar" type="text" />
+    </div>
+
+    <script>
+      // hitta input
+      const eInputFråga = document.querySelector(".fråga");
+      const eInputSvar = document.querySelector(".svar");
+
+      function skicka() {
+        // läs av input
+        var fråga = eInputFråga.value;
+
+        if (fråga == 100) {
+          eInputSvar.value = "999999999999";
+        } else {
+          eInputFråga.value = "Du är en robot";
+        }
+      }
+    </script>
+  </body>
+</html>

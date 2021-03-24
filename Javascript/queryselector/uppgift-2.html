@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>Uppgift-2 querySelector</title>
+    <script
+      src="https://kit.fontawesome.com/e7c2c526f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="kontainer">
+      <label>Förnamn<input class="fNamn" type="text" /></label>
+
+      <label>Efternamn<input class="eNamn" type="text" /></label>
+
+      <label>Ålder<input class="ålder" type="text" /></label>
+
+      <button onclick="skicka()">Kontrollera svar</button>
+
+      <h3></h3>
+      <label>Får du ta körkort?</label
+      ><input disabled class="svar" type="text" />
+    </div>
+
+    <script>
+      // Skapa ett skript som frågar efter förnamn, efternamn och ålder. Skript svarar om användaren får ta körkort eller är omyndig.
+
+      // hitta input
+      const eInputfNamn = document.querySelector(".fNamn");
+      const eInputeNamn = document.querySelector(".eNamn");
+      const eInputÅlder = document.querySelector(".ålder");
+      const eInputSvar = document.querySelector(".svar");
+
+      function skicka() {
+        // läs av input
+        var fNamn = eInputfNamn.value;
+        var eNamn = eInputeNamn.value;
+        var ålder = eInputÅlder.value;
+
+        if (ålder >= 18) {
+          eInputSvar.value = fNamn + " " +  eNamn + " " + "är myndig";
+        } else {
+          eInputSvar.value = fNamn + " " +  eNamn + " " + "är inte myndig";
+        }
+      }
+    </script>
+  </body>
+</html>

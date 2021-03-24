@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>uppgift 2</title>
+    <script src="https://kit.fontawesome.com/e7c2c526f3.js" crossorigin=anonymous></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 2</h1>
+        <button onclick="login()">Logga in</button>
+    </div>
+
+    <script>
+        function login() {
+            // korrekt lösenord
+            var password = "qwerty123";
+
+            // oändlig loop
+            while (true) {
+                var frågaLösen = prompt("Vad är lösenordet");
+
+                // testa om rätt lösenord
+                if (frågaLösen == password) {
+                    alert("Rätt lösenord!");
+                    break;
+
+                } else {
+                    alert("Fel lösenord, försök igen");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

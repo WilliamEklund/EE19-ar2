@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>uppgift 1</title>
+    <script src="https://kit.fontawesome.com/e7c2c526f3.js" crossorigin=anonymous></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Vilket är Europas folkrikaste land?</h1>
+        <button onclick="loop()"></button>
+    </div>
+
+    <script>
+        function loop() {
+            // korrekt svar
+            var land = "Ryssland";
+
+            // oändlig loop
+            while (true) {
+                var gissning = prompt("Vilket är Europas folkrikaste land?");
+
+                // testa om rätt svar
+                if (gissning == land) {
+                    alert("Rätt!")
+                    break;
+
+                } else {
+                    alert("Fel! försök igen");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

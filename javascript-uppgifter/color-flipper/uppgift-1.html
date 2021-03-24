@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper - uppgift-1</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-center">
+            <h4>color flipper</h4>
+            <ul class="nav-links">
+                <li><a href="uppgift-1.html">simple</a></li>
+                <li><a href="uppgift-hex.html">hex</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>Background color : <span class="color">#f1f5f8</span></h2>
+            <button class="btn btn-hero" id="btn">Click me</button>
+        </div>
+    </main>
+    <script>
+        // färger
+        const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
+        const btn = document.getElementById("btn");
+        const color = document.querySelector(".color");
+// funktion, deklarera variabel och få färgerna och värdet att visas
+        btn.addEventListener("click", function() {
+            const randomNumber = getRandomNumber();
+            // console.log(randomNumber);
+
+            document.body.style.backgroundColor = colors[randomNumber];
+            color.textContent = colors[randomNumber];
+        });
+// funktion för att slumpa färg
+        function getRandomNumber() {
+            return Math.floor(Math.random() * colors.length);
+        }
+    </script>
+</body>
+</html>
