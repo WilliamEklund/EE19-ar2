@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Hotell 2</title>
+    <script src="https://kit.fontawesome.com/e7c2c526f3.js" crossorigin=anonymous></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Beställning</h2>
+
+    <label>Ange namn <input type="text" class="namn"></label>
+    <label>Ange antal nätter <input type="text" class="antal"></label>
+
+    <h3>Ange rumstyp</h3>
+    <label>
+        <br>
+        <div><input type="radio" name="rumstyp" class="enkel">Enkelrum 800:-</div>
+    </label>
+    <label>
+        <br>
+        <div><input type="radio" name="rumstyp" class="dubbel"> Dubbelrum 1200:</div>
+    </label>
+    <label>
+        <br>
+        <div><input type="radio" name="rumstyp" class="familj"> Familjerum 1500:-</div>
+    </label>
+
+    <h3>Ange tillägg</h3>
+    <label>
+        <br>
+        <div><input type="checkbox" class="wifi"> Wifi</div>
+    </label>
+    <label>
+        <br>
+        <div><input type="checkbox" class="parkering"> Parkering</div>
+    </label>
+
+    <button disabled>Räkna ut</button>
+    <h2>Uppskattad kostnad</h2>
+    <label>Total pris <input type="text" class="total" disabled></label>
+
+
+    <script>
+        // "Connecta" till element vi använder
+        // 2 textrutor
+        const rutaNamn = document.querySelector(".namn");
+        const rutaAntal = document.querySelector(".antal");
+        // 3 radioknappar
+        const radioEnkel = document.querySelector(".enkel");
+        const radioDubbel = document.querySelector(".dubbel");
+        const radioFamilj = document.querySelector(".familj");
+
+        // 2 kyssrutor
+        const kryssWifi = document.querySelector(".wifi");
+        const kryssParkering = document.querySelector(".parkering");
+        // Knappen beräkna
+        const knappen = document.querySelector("button");
+        // Totalen
+        const rutaTotal = document.querySelector(".total");
+        // Globala variabler
+        var rumPris = 0,
+            wifi = 0,
+            parkering = 0;
+        // När man klickar på radioknapparna
+        radioEnkel.addEventListener("click", function() {
+            console.log("Du har klickat på radioknappen Enkelrum");
+            rumPris = 800;
+            knappen.disabled = false;
+        });
+        radioDubbel.addEventListener("click", function() {
+            console.log("Du har klickat på radioknappen Dubbelrum");
+            rumPris = 1200;
+            knappen.disabled = false;
+        });
+        radioFamilj.addEventListener("click", function() {
+            console.log("Du har klickat på radioknappen Familjerum");
+            rumPris = 1500;
+            knappen.disabled = false;
+        });
+        knappen.addEventListener("click,", function() {
+            console.log("Pris för rummet =", rumPris);
+        });
+        // När man klickar på knappen Beräkna
+        knappen.addEventListener("click", function() {
+            console.log("Pris för rummet =", rumPris);
+            // Läsa av antal-nätter
+            var antal = rutaAntal.value;
+            // Räkna ut totala priset
+            var total = antal * rumPris;
+
+            // Är wifi vald?
+            if (kryssWifi.checked) {
+                total += 100;
+            }
+            // Är parkering vald?
+            if (kryssParkering.checked) {
+                total += 50;
+            }
+            // Skriv ut total
+            rutaTotal.value
+            total;
+        });
+    </script>
+</body>
+</html>

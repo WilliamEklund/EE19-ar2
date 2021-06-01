@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Canvas 7</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="sidebar">
+            <h1>Canvas</h1>
+            <label> x = <input class="input-x" type="text"></label>
+            <label> y = <input class="input-y" type="text"></label>
+            <label> width = <input class="input-w" type="text"></label>
+            <label> height = <input class="input-h" type="text"></label>
+            <label> Färg <input class="färg" type="color"></label>
+            <button class="rita">Rita</button>
+            <button class="sudda">Sudda</button>
+        </div>
+        <canvas></canvas>
+    </div>
+
+    <script defer>
+        const rityta = document.querySelector("canvas");
+        const rutaX = document.querySelector(".input-x");
+        const rutaY = document.querySelector(".input-y");
+        const rutaW = document.querySelector(".input-w");
+        const rutaH = document.querySelector(".input-h");
+        const ritaKnapp = document.querySelector(".rita");
+        const suddaKnapp = document.querySelector(".sudda");
+        const rutaFärg = document.querySelector(".färg");
+
+        rityta.width = "600";
+        rityta.height = "600";
+        var ctx = rityta.getContext("2d");
+
+        ritaKnapp.addEventListener("click", function() {
+            x = rutaX.value;
+            y = rutaY.value;
+            var w = rutaW.value;
+            var h = rutaH.value;
+            ctx.fillStyle = rutaFärg.value;
+            ctx.fillRect(x, y, w, h)
+        });
+        suddaKnapp.addEventListener("click", function() {
+            ctx.clearRect(0, 0, 600, 600);
+        });
+    </script>
+</body>
+</html>

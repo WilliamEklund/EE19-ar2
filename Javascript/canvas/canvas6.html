@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Canvas 6</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="sidebar">
+            <h1>Canvas</h1>
+        </div>
+        <canvas></canvas>
+    </div>
+
+    <script>
+        const rityta = document.querySelector("canvas");
+
+        rityta.width = "600";
+        rityta.height = "600";
+        var ctx = rityta.getContext("2d");
+
+        var x = 100;
+        var y = 200;
+        ctx.fillStyle = "blue";
+        ctx.fillRect(x, y, 50, 50);
+        x = 200;
+        ctx.fillRect(x, y, 50, 50);
+        x = 300;
+        ctx.fillRect(x, y, 50, 50);
+        x = 400;
+        ctx.fillRect(x, y, 50, 50);
+
+        y = 300;
+        ctx.fillStyle = "green";
+        ctx.fillRect(x, y, 50, 50);
+        x = 100;
+        ctx.fillRect(x, y, 50, 50);
+        x = 200;
+        ctx.fillRect(x, y, 50, 50);
+        x = 300;
+        ctx.fillRect(x, y, 50, 50);
+
+
+        var x = 100;
+        var y = 400;
+        var b = 75;
+        var h = 75;
+        ctx.fillRect(x, y, b, h);
+        var x = 200;
+        ctx.fillRect(x, y, b, h);
+        var x = 300;
+        ctx.fillRect(x, y, b, h);
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Hänga gubbe</title>
+    <script src="https://kit.fontawesome.com/e7c2c526f3.js" crossorigin=anonymous></script>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+
+    <script>
+        const ritRuta = document.querySelector("canvas");
+
+        ritRuta.width = 1000;
+        ritRuta.height = 700;
+
+        var ctx = ritRuta.getContext("2d");
+
+        ctx.beginPath();
+
+        // botten
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth = 15;
+        ctx.moveTo(100, 500);
+        ctx.lineTo(900, 500);
+        ctx.stroke();
+
+        // streck upp
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 1.5;
+        ctx.moveTo(200, 500);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+
+        // streck till höger
+        ctx.lineTo(600, 100);
+        ctx.stroke();
+
+        // streck ner/repet
+        ctx.lineTo(600, 150);
+        ctx.stroke();
+
+        ctx.moveTo(650, 200);
+        ctx.arc(600, 200, 50, 0, 6.28);
+        ctx.stroke();
+
+        ctx.moveTo(600, 250);
+        ctx.lineTo(600, 350);
+        ctx.stroke();
+
+        // ben
+        ctx.lineTo(550, 450);
+        ctx.stroke();
+        ctx.moveTo(600, 350);
+        ctx.lineTo(650, 450);
+        ctx.stroke();
+
+        ctx.moveTo(600, 300)
+        ctx.lineTo(500, 350)
+        ctx.stroke();
+
+        ctx.moveTo(600, 300)
+        ctx.lineTo(700, 350)
+        ctx.stroke();
+    </script>
+</body>
+</html>

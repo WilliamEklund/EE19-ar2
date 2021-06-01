@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prov 2d</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Laxpasta</h1>
+        <p>En krämig laxpasta med sås gjord på grädde och buljong, vilket kanske låter simpelt men ack så gott. <br> Låt laxen koka i såsen och servera med krispig nykokt broccoli och gärna med tagliatelle. Smaklig pasta önskar vi!</p>
+
+        <h4>Din beställning</h4>
+        <label>
+            Pasta 300g (29:-)
+            <input autofocus class="form-control pasta" type="text">
+        </label>
+        <label>
+            Laxfilé 400g (99:-)
+            <input class="form-control lax" type="text">
+        </label>
+        <label>
+            Grädde 2,5dl (15:-)
+            <input class="form-control grädde" type="text">
+        </label>
+        <label>
+            Buljong 5g (5:-)
+            <input class="form-control buljong" type="text">
+        </label>
+        <button class="btn btn-primary">Beställ</button>
+
+        <h4>Inköpslistan</h4>
+        <textarea class="form-control lista"></textarea>
+        <h4>Summa inköp</h4>
+        <input type="text" class="form-control summa"></p>
+    </div>
+    <script defer src="omprov-2d.js"></script>
+</body>
+</html>

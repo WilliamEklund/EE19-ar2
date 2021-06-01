@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Canvas 1</title>
+    <script src="https://kit.fontawesome.com/e7c2c526f3.js" crossorigin=anonymous></script>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+
+    <script>
+        const ritRuta = document.querySelector("canvas");
+
+        ritRuta.width = 800;
+        ritRuta.height = 600;
+        // gör så man kan rita i 2d
+        var ctx = ritRuta.getContext("2d");
+
+        // ctx.fillRect(100, 100, 200, 200);
+
+        // ctx.fillStyle = "red";
+        // ctx.fillRect(150, 150, 200, 200);
+
+        // ctx.fillStyle = "green";
+        // ctx.fillRect(500, 100, 200, 200);
+
+        // uppgift 
+        // ctx.fillStyle = "red";
+        // ctx.fillRect(150, 100, 200, 100);
+        // ctx.fillStyle = "green";
+        // ctx.fillRect(150, 200, 200, 100);
+        // ctx.fillStyle = "blue";
+        // ctx.fillRect(150, 300, 200, 100);
+        // ctx.fillStyle = "orange";
+        // ctx.fillRect(150, 400, 200, 100);
+        // ctx.fillStyle = "purple";
+        // ctx.fillRect(150, 500, 200, 100);
+
+        // uppgift 1
+        // ctx.fillStyle = "red";
+        // ctx.fillRect(50, 100, 100, 100);
+        // ctx.fillStyle = "green";
+        // ctx.fillRect(150, 100, 100, 100);
+        // ctx.fillStyle = "red";
+        // ctx.fillRect(250, 100, 100, 100);
+        // ctx.fillStyle = "green";
+        // ctx.fillRect(350, 100, 100, 100);
+
+        // ctx.fillStyle = "green";
+        // ctx.fillRect(50, 200, 100, 100);
+        // ctx.fillStyle = "red";
+        // ctx.fillRect(150, 200, 100, 100);
+        // ctx.fillStyle = "green";
+        // ctx.fillRect(250, 200, 100, 100);
+        // ctx.fillStyle = "red";
+        // ctx.fillRect(350, 200, 100, 100);
+
+        // uppgift 2 Svenska flaggan
+        // ctx.fillStyle = "blue";
+        // ctx.fillRect(180, 100, 450, 250);
+        // ctx.fillStyle = "yellow"
+        // ctx.fillRect(320, 100, 30, 250);
+        // ctx.fillStyle = "yellow"
+        // ctx.fillRect(180, 200, 450, 30);
+
+        // uppgift 3 Rita en bana
+        // ctx.beginPath();
+        // ctx.moveTo(400, 20);
+        // ctx.lineTo(240, 20);
+        // ctx.stroke();
+
+        // ctx.beginPath();
+        // ctx.moveTo(250, 200);
+        // ctx.lineTo(400, 20);
+        // ctx.stroke();
+
+        // ctx.beginPath();
+        // ctx.moveTo(250, 200);
+        // ctx.lineTo(400, 200);
+        // ctx.stroke();
+
+        // uppgift 4 Rita den tjeckiska flaggan
+
+        // flaggans form
+        // ctx.strokeRect(150, 150, 450, 280)
+        // blå triangel
+        // ctx.beginPath();
+        // ctx.moveTo(200, 500);
+        // ctx.lineTo(250, 200 );
+        // ctx.lineTo(50, 200);
+        // ctx.closePath();
+
+        // konturlinje
+        // ctx.strokeStyle = '#000';
+        // ctx.stroke();
+
+        // färg
+        // ctx.fillStyle = "blue";
+        // ctx.fill();
+
+
+        // Rita ett hus
+        ctx.fillStyle = "#b9bea6";
+        ctx.strokeStyle = "#000";
+        ctx.lineWidth = "3";
+
+        // triangeln/husets tak
+        ctx.beginPath();
+        ctx.moveTo(100, 260);
+        ctx.lineTo(300, 10);
+        ctx.lineTo(500, 260);
+        ctx.closePath();
+        ctx.fill();
+        ctx.stroke();
+
+        // skorssten
+        ctx.fillRect(381, 60, 45, 120);
+        ctx.strokeRect(381, 60, 45, 140);
+        ctx.fillRect(378, 198, 55, 5);
+
+        // väggen
+        ctx.fillRect(100, 260, 400, 300);
+        ctx.strokeRect(100, 260, 400, 300);
+
+        // fönster
+        ctx.fillStyle = "#dbdbdb";
+        ctx.fillRect(130, 300, 70, 45);
+        ctx.fillRect(205, 300, 70, 45);
+        ctx.fillRect(325, 300, 70, 45);
+        ctx.fillRect(400, 300, 70, 45);
+        ctx.fillRect(130, 350, 70, 45);
+        ctx.fillRect(205, 350, 70, 45);
+        ctx.fillRect(325, 350, 70, 45);
+        ctx.fillRect(400, 350, 70, 45);
+        ctx.fillRect(325, 425, 70, 45);
+        ctx.fillRect(400, 425, 70, 45);
+        ctx.fillRect(325, 475, 70, 45);
+        ctx.fillRect(400, 475, 70, 45);
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Canvas 5</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="sidebar">
+            <h1>Canvas</h1>
+        </div>
+        <canvas></canvas>
+    </div>
+
+    <script defer>
+        const rityta = document.querySelector("canvas");
+
+        rityta.width = "600";
+        rityta.height = "600";
+
+        var ctx = rityta.getContext("2d");
+        ctx.fillStyle = "blue"
+        ctx.fillRect = (100, 100, 50, 50);
+        ctx.strokeStyle = "green";
+        ctx.strokeRect = (200, 100, 50, 50);
+
+        ctx.font = '60px Fontdiner Swanky';
+        ctx.fillText("Canvas hahaah", 100, 300);
+        ctx.strokeText("Canvas hahaah", 100, 350);
+    </script>
+</body>
+</html>

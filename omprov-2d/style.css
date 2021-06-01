@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+body {
+    background: url('https://vardagskoket.se/recept/wp-content/uploads/sites/2/2015/11/rsz_img_3034-1200x715.jpg');
+    background-size: 1800px;
+}
+.kontainer {
+    width: 600px;
+    padding: 50px 50px 30px 50px;
+    margin: 1em auto;
+    background: #545b24;
+    background-size: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 1px #000000a9;
+    color: #FFF;
+    font-family: 'Quicksand', sans-serif;
+}
+h2, h3, h4 {
+    margin-top: 1em;
+}
+h5 {
+    margin-bottom: 0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+label {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 10px 0;
+    padding: 0;
+}
+input, textarea {
+    background: #e1f7ff;
+    padding: 0.5em;
+    min-height: 2em;
+    border-radius: 3px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: 2px solid #FFF;
+}
+.lista, .summa {
+    background: #e1f7ff;
+    padding: 20px;
+    border-radius: 3px;
+    font-style: italic;
+    border: 1px solid #CCC;
+    color: #333;
+}
+.summa {
+    background: #f7dd87;
+}

@@ -1,0 +1,145 @@
+<img src="./bilder/0608848b915678ab5ca7b40083780a56.webp" alt="">
+
+<h2>Slit men släng inte - ta hand om dig själv och dina saker</h2>
+      <p>På IKEA tror vi på att ge alla kära ägodelar en andra chans. Att varje gammal byrå eller favorit-tröja kan bli som ny – för oss själva eller för någon annan.</p>
+      <a href="#" type="button">Till småförvaring</a>
+
+
+      <h2>Click & collect drive thru 39:-</h2>
+<p>Du handlar online, vi packar, du hämtar med bil utanför varuhuset.</p>
+    <p>Ordinarie pris 99:-</p>
+    <p>Erbjudandet gäller 3 dec 2020 -31 jan 2021.</p>
+    <a href="#" type="button">Läs mer</a>
+
+    <img src="./bilder/a7cd3519b7baa5e1d7fb54e78c6187ef.webp" alt="">
+
+    <img src="./bilder/e7d608573aad54149cd219bbc52470ba.webp" alt="">
+
+     <img src="./bilder/ebe9420761ad43010f43aed4945cc6d0.webp" alt="">
+
+      <img src="./bilder/PH173179-crop001.webp" alt="">
+
+       <img src="./bilder/PH175732.webp" alt="">
+
+
+       // onclick display new images horizontally function
+
+function paddle() {
+  document.getElementById("horizontalScroll").style.
+}
+
+Ikea img 
+     position: fixed;
+        top: 30px;
+        left: 8%;
+        cursor: pointer;
+        width: 100px;
+        height: auto;
+        transition: all 0.3s;
+
+          <!-- images appear when scrollling-->
+            <div class="grid-box box1X">
+                <img src="./bilder/img4-scroll-Z.webp" alt="1" />
+            </div>
+
+            <div class="grid-box box2X">
+                <img src="./bilder/img5-scroll-Z.webp" alt="2" />
+            </div>
+
+            <div class="grid-box box3X">
+                <img src="./bilder/img6-scroll-Z.webp" alt="3" />
+            </div>
+
+            const imgGallery = document.querySelector(".scrollX-div");
+const allArrows = document.querySelector(".arrows");
+const arrowLeft = document.querySelector(".arrow-left");
+const arrowRight = document.querySelector(".arrow-right");
+
+imgGallery.addEventListener("click"), function {
+var pointerRight = arrowRight;
+console.log("right pointer clicked", arrowRight);
+pointerRight.style.Left = "400px";
+});
+
+// hide right arrow onclick
+// function displayDiv
+/*() {
+    document.getElementById("arrowLeft").style.opacity = "0";
+}
+// Horizontal scroll on click function (scroll-x)
+function paddleLeft() {
+    document.getElementById("horizontalScroll").scrollLeft -= 1625;
+    document.getElementById("arrowLeft").style.opacity = "1";
+}
+
+function paddleRight() {
+    document.getElementById("horizontalScroll").scrollLeft += 1625;
+    document.getElementById("arrowLeft").style.opacity = "1";
+}\*/
+
+
+<div class="box9">
+                <div class="footer-content">
+
+                    <div class="footer-columns column1">
+                        <h2>Gå med i IKEA Family</h2>
+                        <p>
+                            Ge dina idéer nytt liv med erbjudanden, inspiration och massor av
+                            aktiviteter i våra varuhus - helt kostnadsfritt. Se mer.
+                        </p>
+                        <button>Gå med eller logga in</button>
+                    </div>
+
+                    <div class="footer-columns footer-lists column2">
+                        <ul>
+                            <li class="bolder">Handla på IKEA</li>
+                            <li>Varuhus & öppettider</li>
+                            <li>Betalning</li>
+                            <li>Följ din order</li>
+                            <li>Leveransalternativ</li>
+                            <li>Presentkort</li>
+                            <li>Katalog & broschyrer</li>
+                            <li>Hela sortimentet</li>
+                            <li>Planeringsverktyg</li>
+                            <li>IKEA för företag</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-columns footer-lists column3">
+                        <ul>
+                            <li class="bolder">Support</li>
+                            <li>Kontakta oss</li>
+                            <li>Betalning</li>
+                            <li>Kundservice</li>
+                            <li>Retur & reklamation</li>
+                            <li>Presentkort</li>
+                            <li>Köp & leveransvillkor</li>
+                            <li>Hela sortimentet</li>
+                            <li>Planeringsverktyg</li>
+                            <li>Ge IKEA feedback</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-columns footer-lists column4">
+                        <ul>
+                            <li class="bolder">Ikea Family</li>
+                            <li>Bli medlem</li>
+                            <li>Medlemsförmåner</li>
+                            <li>Om Ikea Family</li>
+                            <li>Retur & reklamation</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-columns footer-lists column5">
+                        <ul>
+                            <li class="bolder">Om oss</li>
+                            <li>Det här är Ikea</li>
+                            <li>Hållbarhet</li>
+                            <li>Jobba på Ikea</li>
+                            <li>Pressrum</li>
+                            <li>Ikea Foundation</li>
+                            <li>Ikea Museum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
